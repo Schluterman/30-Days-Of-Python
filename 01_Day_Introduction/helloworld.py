@@ -19,3 +19,14 @@ print(type([1, 2, 3]))           # List
 print(type({'name':'Asabeneh'})) # Dictionary
 print(type({9.8, 3.14, 2.7}))    # Set
 print(type((9.8, 3.14, 2.7)))    # Tuple
+
+# LVL ONE DONE
+# LVL TWO DONE 
+# LVL THREE
+
+#final Question LVL 3 
+import math
+p1 = [2,3]
+p2 = [10,8]
+distance = math.sqrt( ((p1[0]-p2[0])**2)+((p1[1]-p2[1])**2)) #finds the distance between two points 
+print(distance)

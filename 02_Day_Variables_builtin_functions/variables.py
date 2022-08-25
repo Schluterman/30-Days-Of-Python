@@ -1,40 +1,48 @@
 
 # Variables in Python
+#LEVEL ONE
+#Q2 Day 2 30 Days of Python Programing
+first_name = 'Preston'
+last_name = 'Schluterman'
+full_name = first_name + last_name
+country = 'United States'
+city = 'Little Rock'
+age = 25
+year = 2022
+is_married = False
+is_true = True
+is_light_on = True
+a,b,c = 1,2,3
 
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
-country = 'Finland'
-city = 'Helsinki'
-age = 250
-is_married = True
-skills = ['HTML', 'CSS', 'JS', 'React', 'Python']
-person_info = {
-    'firstname':'Asabeneh', 
-    'lastname':'Yetayeh', 
-    'country':'Finland',
-    'city':'Helsinki'
-    }
+#LEVEL TWO
+print(type(first_name))
+print(type(last_name))
+print(type(full_name))
+print(type(country))
+print(type(city))
+print(type(age))
+print(type(year))
+print(type(is_married))
+print(type(is_true))
+print(type(is_light_on))
+print(len(first_name))
+first_length = len(first_name)
+last_length = len(last_name)
+print(f'first name is {first_length} characters long and your last name is {last_length} long')
+num_one = 5
+num_two = 4
+print(num_one + num_two)
+print(num_two - num_one)
+print(num_one / num_two)
+print(num_two * num_one)
+remainder = num_one % num_two
+print(num_one ** num_two)
+floor_divison = num_one // num_two
+area_of_circle = 3.14 * 30 *30
+circum_of_circle = 2 * 3.14 * 30
+radius = input('What\'s the radius')
+area = 3.14 * int(radius) *int(radius)
+print(area)
+help('keywords')
 
-# Printing the values stored in the variables
 
-print('First name:', first_name)
-print('First name length:', len(first_name))
-print('Last name: ', last_name)
-print('Last name length: ', len(last_name))
-print('Country: ', country)
-print('City: ', city)
-print('Age: ', age)
-print('Married: ', is_married)
-print('Skills: ', skills)
-print('Person information: ', person_info)
-
-# Declaring multiple variables in one line
-
-first_name, last_name, country, age, is_married = 'Asabeneh', 'Yetayeh', 'Helsink', 250, True
-
-print(first_name, last_name, country, age, is_married)
-print('First name:', first_name)
-print('Last name: ', last_name)
-print('Country: ', country)
-print('Age: ', age)
-print('Married: ', is_married)
