@@ -49,3 +49,34 @@ def get_oldest_cat (*args):
 
 # 3 Print out: "The oldest cat is x years old.". x will be the oldest cat age by using the function in #2
 print(f"The oldest cat is {get_oldest_cat(cat1.age, cat2.age, cat3.age)} years old.")
+
+#public vs private exp. self._name  using _ is known as  private *dont modify for method or atribute 
+
+#dundermethod built in functions in python 
+
+#inheritance 
+#users -wizards - archers 
+class user:
+    def sign_in(self):
+        print('logged in')
+
+class Wizard(user):
+    def __init__(self, name, power):
+        self.name = name
+        self.power = power
+    def attack(self):
+        print(f'attacking with power of {self.power}')
+
+class Archer(user):
+     def __init__(self, name, num_arrows):
+        self.name = name
+        self.num_arrows = num_arrows
+     def attack(self):
+        print(f'attacking with arrows: left- {self.num_arrows}')
+
+wizard1 = Wizard('merlin',50)
+archer1 = Archer('man',40)
+
+print(wizard1.sign_in())
+wizard1.attack()
+
