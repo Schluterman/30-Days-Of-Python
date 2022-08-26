@@ -49,3 +49,14 @@ def get_oldest_cat (*args):
 
 # 3 Print out: "The oldest cat is x years old.". x will be the oldest cat age by using the function in #2
 print(f"The oldest cat is {get_oldest_cat(cat1.age, cat2.age, cat3.age)} years old.")
+
+#class Method 
+@classmethod
+def adding_things(cls, num1, num2): #cls is class
+    return cls('Teddy', num1 + num2)
+
+@staticmethod 
+def adding_things( num1, num2): #doesnt use cls 
+    return  num1 + num2
+player3 = PlayerCharacter.adding_things(2,3)
+print(PlayerCharacter.adding_things(2,3))
