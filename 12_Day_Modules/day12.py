@@ -21,9 +21,9 @@ import string
 # print(user_id_gen_by_user())
 
 #3 
-# def rgb_color_gen():
-#     r = str(random.randint(0,255))
-#     g = str(random.randint(0,255))
-#     b = str(random.randint(0,255))
-#     return "rgb(" + r + "," + g + "," + b + ")"
-# print(rgb_color_gen())
+def rgb_color_gen():
+    r = str(random.randint(0,255))
+    g = str(random.randint(0,255))
+    b = str(random.randint(0,255))
+    return "rgb(" + r + "," + g + "," + b + ")"
+print(rgb_color_gen())
