@@ -51,3 +51,24 @@ for i in numbers:
     print(i)
 
 
+#LEVEL TWO 
+#1
+def change_to_upper(countries):
+    return countries.upper()
+countries_upper_cased = map(change_to_upper,countries)
+print(list(countries_upper_cased))
+
+#2
+def square(x):
+    return x ** 2
+numbers_squared = map(square, numbers)
+print(list(numbers_squared))
+
+#3
+def names_to_upper(names):
+    return names.upper()
+names_upper_cased = map(names_to_upper,names)
+print(list(names_upper_cased))
+
+
+
