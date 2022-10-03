@@ -26,6 +26,11 @@ print(is_valid_variable("first_name"))
 
 #LEVEL THREE
 sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?'
+def most_common_words(text):
+    split_it = text.split()
+    Cnter = Counter(split_it).most_common()
+    # Cnter.sort(reverse=True)
+    return Cnter
 
 def clean_text(text):
     text = text.lower()
